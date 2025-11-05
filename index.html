@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de imagenes</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="crud.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Gestion de Usuarios</h1>
+
+        <div class="Fomulario">
+            <h2>Crear / Editar Usuario</h2>
+            <input type="hidden" id="id">
+            <input type="text" id="nombre" placeholder="Nombre" required><br>
+            <input type="email" id="correo" placeholder="Correo electronico" required><br>
+            <input type="file" id="imagen" accept="image/*"><br>
+            <button id="btnCrear">Crear</button>
+            <button id="btnActualizar">Actualizar</button>
+        </div>
+        <div class="Lista">
+            <h2>Lista de Usuarios</h2>
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>imagen</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaUsuarios">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
